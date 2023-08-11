@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mondrian Painting</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background-color: black;
+            height: 748px;
+            width: 748px;
+            display: grid;
+            grid-template-columns: 88px 600px 40px;
+            grid-template-rows: 220px 388px 55px 55px;
+            gap: 10px;
+        }
+        .item{
+            background-color: whitesmoke;
+        }
+        
+        .red{
+            background-color: red;
+            grid-area: 1/2/3/4;
+        }
+        .blue{
+            background-color: rgb(0, 0, 155);
+            grid-area: 3/1/5/2;
+        }
+        .white{
+            grid-area: 3/2/5/3;
+        }
+        .yellow{
+            background-color: yellow;
+            grid-area: 4/3/5/4;
+        }
+        
+
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="item 1"></div>
+        <div class="item red"></div>
+        <div class="item 3"></div>
+        <div class="item white"></div>
+        <div class="item 5"></div>
+        <div class="item yellow"></div>
+        <div class="item blue"></div>
+       </div>
+</body>
+</html>
